@@ -1,5 +1,12 @@
 sudo: false
 language: ruby
 rvm:
-  - 2.3.1
+- 2.0.0
+- 2.1.8
+- 2.2.0
 before_install: gem install bundler -v 1.14.6
+install: bundle _1.14.6_ install
+script: bundle _1.14.6_ exec rake spec
+notifications:
+  slack:
+    secure: MaiWfXSv4HSSOCYHunEuFIyVEhCaw/uhjWjSsZYDJSiGXcSYPrDfY4L3ccCkAM0j3EueNfxK5rh+aN8f5b0fAFTapmnHlBTlK0prb78kJCDuoxHFKjH5GWQL5UmyPftvr/V1ydtq8PJMMI+Hd4ui1NqE/LbMWdABsznssXM+wVs5yYaf+R4NxSE6nQPQdTAFEjzwXfHq0xmKcvLWKkxjuJSr503FgEdaYxVXndhz0wmsSWH/F/0v07rz75jzmlCJOIqU2zQ/dCZxEouZuq+beHemyT4BQkxj0ashhaHo1R6evBsg3TwxC+gBt8IvoPS7UaJyJbJYMgRezRezMWkUcH8o/cIQ4cHd0l9H/ZAR7WETN1uISvTFUVELFMYLg4vWIH3JJaXpy4YNn7hB/hXU44RBdZdwWhY1IcneN/kXydTRalq2rrl84YyoEp51qjH/f7GenR4K6UNL5ZYGqNxllPdD3vf7+ulGoGcRIc7uxfrIs/qhjNXYrHKSUUo1t/MQmomeWnLgIzz1MBHID6qW4yskw8Vy5YIr8crE8YzRBO5jQ1n1wOL6yiKdGgkBTRPM26GEDmO0kT51os+3AxMqPdtskNv5nolHiJyxNlDFJcj4gDmKstjA6DOrWvXtP4EYdZex3CFXlIwtNRrqjWINicPtHIlJOqngC94WP63vMDg=
