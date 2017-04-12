@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/capistrano-deploy_locker.svg)](https://badge.fury.io/rb/capistrano-deploy_locker)
+[![Build Status](https://travis-ci.org/DeNADev/capistrano-deploy_locker.svg?branch=master)](https://travis-ci.org/DeNADev/capistrano-deploy_locker)
 # Capistrano::DeployLocker
 
 A capistrano plugin to make deployment with exclusive lock.
