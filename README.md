@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/capistrano-deploy_locker.svg)](https://badge.fury.io/rb/capistrano-deploy_locker)
+[![Build Status](https://travis-ci.org/DeNADev/capistrano-deploy_locker.svg?branch=master)](https://travis-ci.org/DeNADev/capistrano-deploy_locker)
 # Capistrano::DeployLocker
 
 A capistrano plugin to make deployment with exclusive lock.
@@ -30,7 +32,7 @@ Name | Default | Description
 -----|---------|------------
 deploy_lock_key |  `"#{fetch(:application)}.#{fetch(:stage)}"` | String to specify lock target
 deploy_lock_dir | `./.lock` | Directory to write lockfile or other info
-deploy_lock_user | `ENV['USER'] || ENV['LOGIN']` | Who locks deploy
+deploy_lock_user | `ENV['USER'] \|\| ENV['LOGIN']` | Who locks deploy
 deploy_lock_reason | `"#{$0} #{ARGV}"` | Why deploy is locked
 
 You can provide `:deploy_lock_user` and `:deploy_lock_reason` to show infomation
