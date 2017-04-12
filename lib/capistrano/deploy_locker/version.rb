@@ -1,5 +1,5 @@
 module Capistrano
   module DeployLocker
-    VERSION = "0.1.0"
+    VERSION = '0.3.0'
   end
 end

@@ -1,7 +1,1 @@
-require "capistrano/deploy_locker/version"
-
-module Capistrano
-  module DeployLocker
-    # Your code goes here...
-  end
-end
+load File.expand_path('../tasks/deploy_locker.rake', __FILE__)
