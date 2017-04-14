@@ -61,6 +61,15 @@ after 'deploy:finished', 'deploy:unlock'
 after 'deploy:failed', 'deploy:unlock'
 ```
 
+## Alternatives
+
+Here is a list of other libraries which provides similar functionarily:
+
+- [capistrano_deploy_lock](https://github.com/ndbroadbent/capistrano_deploy_lock)
+- [capistrano-deploy-lock](https://github.com/maruf-freelancer/capistrano-deploy-lock)
+- [capistrano-deploylock](https://github.com/tetuyoko/capistrano-deploylock)
+- [caplock](https://github.com/Druwerd/caplock)
+
 ## License
 
 Available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
